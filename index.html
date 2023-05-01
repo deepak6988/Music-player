@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="navbar">
+        <img src="logo.jpg">
+        <h1>ClearBeats</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <h1>Songs</h1>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="1"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="2"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="3"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="4"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="5"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="6"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="7"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="8"></i>
+            </div>
+        </div>
+        <div class="songlist">
+                <img src="1.jpg" class="song_img">
+            <div class="song_name">
+                Humnava mere
+            </div>
+            <div class="time_play">
+                <span>05:00</span>
+                <i class="fa-sharp fa-solid fa-circle-play slplay" id="9"></i>
+            </div>
+        </div>
+    </div>
+    <div id="bg"></div>
+    <div id="music_player">
+        <div class="hd">
+            <i class="fa-solid fa-angle-down ic" id="down"></i>
+            <h1>Music Player</h1>
+            <i class="fa-solid fa-ellipsis-vertical ic"></i>
+        </div>
+        <div class="song">
+            <div class="song_image">
+                <img src="1.jpg" id="player_img">
+            </div>
+            <div class="sname">
+                <span class="player_name">Humnava mere</span>
+            </div>
+            <div class="scn">
+                <div class="sbar">
+                    <input type="range" min="0" max="100" value="0" class="bar">
+                    <div class="time">
+                        <span id="mt">00:00</span>
+                        <span>05:00</span>
+                    </div>
+                </div>
+                <div id="ctr">
+                    <i class="fa-solid fa-backward-step" onclick="back()"></i>
+                    <i class="fa-sharp fa-solid fa-circle-play" id="master" onclick="a()"></i>
+                    <i class="fa-solid fa-forward-step" onclick="next()"></i>
+                    <!-- <i class="fa-sharp fa-solid fa-circle-pause"></i> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="controls">
+        <div class="scn">
+            <div><i class="fa-solid fa-angle-up" id="up"></i></div>
+            <div class="sbar">
+                <input type="range" min="0" max="100" value="0" class="bar">
+                <div class="time">
+                    <span id="ct">00:00</span>
+                    <span>05:00</span>
+                </div>
+            </div>
+            <div id="ctr">
+                <div class="song_info"><span class="player_name">Warriyo - Mortals [NCS Release]</span></div>
+                <i class="fa-solid fa-backward-step" onclick="back()"></i>
+                <i class="fa-sharp fa-solid fa-circle-play" id="masterplay" onclick="a()"></i>
+                <i class="fa-solid fa-forward-step" onclick="next()"></i>
+                <!-- <i class="fa-sharp fa-solid fa-circle-pause"></i> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/aa965fa392.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
